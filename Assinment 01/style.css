@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@100;200;300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@100;200;300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+
+body {
+ font-family: "Poppins";
+ background-color: rgb(241, 246, 251);
+ /* padding: 40px; */
+}
+
+.side_bar {
+ 
+
+}
+
+.header_side_bar {
+ background-color: rgb(243, 94, 68);
+ width: 5px;
+ height: 50px;
+ padding: 10px 0px;
+
+
+}
+
+.header_text {
+ color: rgba(0, 0, 0, 0.911);
+ font-family: 'Lobster Two',
+  cursive;
+ font-size: 40px;
+ padding: 0px 8px;
+
+}
+
+.header_color_text {
+ color: rgb(250, 191, 18);
+ font-family: "Poppins", "sans-serif";
+ font-size: 50px;
+
+}
+
+.section_button {
+ text-decoration: none;
+ background-color: rgb(243, 94, 68);
+ ;
+ width: 70px;
+ height: 50px;
+ padding: 10px 40px;
+ border-radius: 6px;
+ color: rgba(255, 255, 255, 0.849);
+ font-size: 15px;
+ font-weight: bold;
+}
+
+.header_scroll {
+ font-size: 11.2px;
+}
+
+.container {
+ display: flex;
+ padding-left: 4%;
+ padding-bottom: 100px;
+}
+
+.hafe_weight {
+ width: 50%;
+ padding: 40px
+}
+
+.section_img {
+ width: 60%;
+ padding-left: 20%;
+}
+
+/* section 2 mission section style start from here */
+.section_header_text {
+ text-align: center;
+ font-size: 50px;
+}
+
+.mission_list {
+ display: flex;
+}
+
+.mission_imgs {
+ width: 150px;
+}
+
+.mission_1st,
+.mission_2nd,
+.mission_3rd {
+ /* width: 50%;
+ height: 120px; */
+ width: 340px;
+ height: 380px;
+ border-radius: 5px;
+ padding: 10px;
+ margin: 20px;
+}
+
+.mission_1st {
+ background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.mission_2nd {
+ background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+.mission_3rd {
+ background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+/* section 3 style start from here/developer section */
+.section_subheader_text {
+ color: rgb(0, 0, 0);
+ font-size: 35px;
+}
+
+.section_subheader_color_text {
+ color: rgb(250, 191, 18);
+}
+
+/* Apps Download Section Start From here  */
+.stores {
+ text-align: center;
+ padding-bottom: 100px;
+}
+
+/* footer section from here */
+
+.sub_footer {
+ width: 100%;
+ height: 150px;
+ background-color: rgba(0, 0, 0, 0.952);
+ text-align: center;
+ padding: 10px 0px 10px 0px;
+}
+
+.footer_text {
+ color: rgb(255, 255, 255);
+ text-align: center;
+}
+
+.main_footer {
+ width: 100%;
+ height: 45px;
+ padding: 10px 0px 10px 0px;
+ background-color: black;
+}
