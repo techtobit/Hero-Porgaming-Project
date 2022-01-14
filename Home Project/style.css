@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@100;200;300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@100;200;300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+body {
+ font-family: "poppins", Helvetica, sans-serif;
+ background-color: #E5E5E5;
+}
+
+.container {
+ display: flex;
+ justify-content: center;
+}
+
+.section_content {
+ width: 870px;
+ height: 679px;
+ background-color: #FFFFFF;
+ border-radius: 2px;
+ padding: 33px;
+
+}
+
+.section_heading {
+ color: #562EFF;
+ font-size: 24px;
+}
+
+.players {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-row: 30px;
+}
+
+
+
+.player_name{
+ padding: 16px;
+}
+
+
+
+
+.player {
+ display: flex;
+ align-items: center;
+}
+
+
+.player img {
+ width: 56px;
+ height: 56px;
+}
+
+/* .player_name {
+ font-size: 18px;
+ font-weight: medium;
+}  */
