@@ -1,0 +1,59 @@
+/*------------
+ google fonts
+ -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+/*----------
+ site icons
+ ----------*/
+
+/* Universal Style  */
+:root {
+ --main-font: poppins;
+ --main-bg-color: hsl(142, 15%, 97%);
+ --main-theme-color: hsl(336, 100%, 50%);
+ --main-heading-color: hsl(210, 29%, 13%);
+ --button-text-color: hsl(192, 15%, 99%);
+ --big-font: 42px;
+ --padding: 8px 8px 8px 8px;
+ --border-radius: 14.5px;
+}
+
+body {
+ font-family: var(--main-font);
+ background-color: var(--main-bg-color);
+}
+
+.content {
+ display: flex;
+}
+
+.home_info {
+ width: 50%;
+ height: 100%;
+ padding-left: 8%;
+}
+
+.header_text {
+ font-size: var(--big-font);
+}
+
+.header_color_text {
+ color: var(--main-theme-color);
+}
+
+.header_button {
+ color: var(--main-bg-color);
+ background-color: var(--main-theme-color);
+ padding: var(--padding);
+ border-radius: var(--border-radius);
+}
+
+a {
+ text-decoration: none;
+}
+
+.button_icon {
+ color: var(--main-heading-color);
+}
