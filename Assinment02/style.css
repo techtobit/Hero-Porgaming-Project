@@ -3,165 +3,621 @@
  -------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
-
-/*----------
- site icons
- ----------*/
-
 /* Universal Style  */
 :root {
 
- /* fonts  */
- --main-font: poppins;
+  /* fonts  */
+  --main-font: poppins;
 
- /* fonts-size  */
- --main-header-font: 42px;
- --sub-header-font: 28px;
- --price-font: 24px;
+  /* fonts-size  */
+  --main-header-font: 42px;
+  --sub-header-font: 28px;
+  --site-name-font: 20px;
+  --navigation-font: 15px;
+  --button-font: 16px;
+  --price-font: 24px;
+  --rateing-font: 11px;
+  --rateing-pragraph-font: 14px;
+
+  /* fonts-width  */
+  --sub-heading-width: medium;
+  --button-width: 198px;
+  --price-heading-width: 82px;
+  --pragraph-width: 156px;
+  --icon-width: 44px;
+  --button-width: bold;
+  --nav-icons-width: 136px;
+  --price-width: bold;
+  --rateing-pragraph-width: bold;
 
 
- /* fonts-width  */
- --sub-heading-width: medium;
- --button-width: 198px;
- --price-heading-width: 82px;
- --pragraph-width: 156px;
- --icon-width: 44px;
+  /* height  */
+  --button-height: 44px;
+  --nav-icons-height: 136px;
+  /* colors  */
+  --main-theme-color: hsl(338, 74%, 53%);
+  --sub-theme-color: hsl(210, 29%, 24%);
+  --main-bg-color: hsl(0, 17%, 98%);
+  --main-bg-shadow-color: hsl(192, 15%, 99%);
+  --popular-collection-bg-color: hsla(200, 8%, 93%, 0.952);
+  --main-heading-color: hsl(210, 29%, 24%);
+  --button-text-color: hsl(0, 0%, 100%);
 
- /* height  */
- --button-height: 44px;
- /* colors  */
- --main-bg-color: hsl(142, 15%, 97%);
- --main-bg-shadow-color: hsl(204, 8%, 95%);
- --popular-collection-bg-color: hsl(0, 0%, 67%);
- --main-theme-color: hsl(338, 74%, 53%);
- --main-heading-color: hsl(210, 29%, 13%);
- --button-text-color: hsl(0, 0%, 100%);
+  --footer-color: hsl(210, 29%, 24%);
+  --rateing-filled-color: hsl(31, 100%, 49%);
+  --rateing-unfilled-color: hsl(210, 29%, 24%);
 
- /* paddin  */
- --padding: 8px 8px 8px 8px;
- /* margin  */
- /* border_radius */
- --button-border-radius: 41px;
- --border-radius-5: 5px;
+  /* padding  */
+  --padding-button: 5px;
+  /* margin  */
+  /* border_radius */
+  --button-border-radius: 41px;
+  --border-radius-5: 5px;
 }
 
+
+/* Universal Default Style  */
 body {
- font-family: var(--main-font);
- background-color: var(--main-bg-color);
+  font-family: var(--main-font);
+  background-color: var(--main-bg-color);
+  scroll-behavior: smooth;
+}
+
+/* Hover Effects */
+/* a:hover {
+ color: var(--popular-collection-bg-color)
+} */
+
+a {
+  text-decoration: none;
+}
+
+
+
+/*---------------------------------- 
+Header Section Start From Here
+------------------------------------*/
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.menu_icon {
+  display: none;
+}
+
+.site_name {
+  font-size: var(--site-name-font);
+  color: var(--sub-theme-color);
+  text-transform: uppercase;
+
+  position: relative;
+  padding: 0px 0px 0px 110px;
+
+}
+
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0px 110px 0px 0px;
+}
+
+.nav_link {
+  color: var(--sub-theme-color);
+}
+
+.nav_link:hover {
+  color: var(--main-theme-color);
+}
+
+.nav_icons {
+  font-size: 40px;
+  padding: 20px;
+
 }
 
 /*------------------------------------
 Home Section Css Start From Here 
 ------------------------------------- */
 
+#content-section {
+  padding-bottom: 150px;
+}
+
+
 .content {
- display: flex;
+  display: flex;
 
 }
 
 .home_info {
- width: 50%;
- height: 100%;
- padding-left: 8%;
+  width: 50%;
+  height: 100%;
+  padding-left: 8%;
 }
 
 .header_text {
- font-size: var(--main-header-font);
+  color: var(--main-heading-color);
+  font-size: var(--main-header-font);
 }
 
 .header_color_text {
- color: var(--main-theme-color);
+  color: var(--main-theme-color);
 }
 
-.header_button {
- color: var(--main-bg-color);
- background-color: var(--main-theme-color);
- padding: var(--padding);
- border-radius: var(--button-border-radius);
+.header_pragraph {
+  color: var(--sub-theme-color);
 }
 
-a {
- text-decoration: none;
+.button {
+  width: 208px;
+  height: 44px;
+  background-color: var(--main-theme-color);
+  border-radius: var(--button-border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-button);
 }
 
+
+.header_button,
 .button_icon {
- color: var(--button-text-color);
- /* width: var(--icon-width);
- height: var(--button-height); */
- font-weight: 4px;
+  color: var(--main-bg-color);
+  font-size: var(--button-font);
+  font-weight: var(--button-width)
+}
 
+
+
+#button_icon {
+  font-size: 40px;
+  padding: 5px;
+}
+
+.header_img {
+  background-image: url("logos/blob5.svg");
+  background-repeat: no-repeat;
+  background-size: 420px;
+}
+
+
+
+/* --------------------
+trusted company List 
+---------------------- */
+.company_list {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+.companys {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  border-top: 1px solid hsl(216, 6%, 85%);
+  border-bottom: 1px solid hsl(220, 4%, 85%);
+  /* border: 3px solid hsl(210, 29%, 24%); */
+  padding: 40px;
 }
 
 /*------------------------------------
 Section 2/ collection Section css 
 ------------------------------------- */
 .section_heading {
- text-align: center;
- font-size: var(--main-header-font);
+  text-align: center;
+  font-size: var(--sub-header-font);
+  color: var(--sub-theme-color);
 }
 
 .collections {
- display: flex;
- flex-direction: column;
- justify-content: center;
- width: 1047px;
- height: 100%;
- align-items: center;
- position: relative;
- margin-left: 135px;
- background-color: var(--popular-collection-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1047px;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  margin-left: 135px;
+  /* background-color: var(--popular-collection-bg-color); */
 }
 
 .collections_grid {
- display: grid;
- grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
 }
 
 .collections_info {
-
- width: 80%;
- height: 100%;
- padding: 20px;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
 
 }
 
 .collections_demo {
- width: 300px;
- height: 476px;
- background-color: var(--main-bg-color);
- padding: 8px;
- border-radius: var(--border-radius-5);
+  width: 300px;
+  height: 450px;
+  background-color: var(--main-bg-color);
+  padding: 8px;
+  border-radius: var(--border-radius-5);
+  box-shadow: 2px 2px 25px 15px var(--popular-collection-bg-color);
 
 }
 
 .demo_img {
- width: 300px;
- height: 256px;
+  width: 300px;
+  height: 256px;
+  padding-bottom: 20px;
 }
 
 .demo_details {
- display: block;
+  display: inline;
 
 }
 
-.demo_header {
- font-size: var(--sub-header-font);
- font-weight: var(--sub-heading-width);
 
+.demo_header {
+  display: flex;
+  flex-direction: column;
+  color: var(--sub-theme-color);
+  font-size: var(--price-font);
+  font-weight: var(--price-width);
+  padding: none;
+}
+
+.demo_header:hover {
+  color: var(--main-theme-color);
 }
 
 .demo_price {
- font-weight: var(--price-font);
- font-weight: var(--price-heading-width);
+  font-weight: normal;
 }
 
+
+/* rateing  */
 .demo_info {
- font-weight: var(--pragraph-width);
+  display: flex;
+  align-items: center;
+  font-size: var(--rateing-font);
+  position: relative;
+  top: -4px;
 }
+
+.demo_info .demo_rateing .fa-star.filled {
+  color: var(--rateing-filled-color);
+}
+
+.demo_info .demo_rateing .fa-star.unfilled {
+  color: var(--rateing-unfilled-color);
+}
+
+.tottal_star {
+  padding-left: 20px;
+}
+
+.demo_ad_info {
+  font-size: var(--rateing-pragraph-font);
+  color: var(--sub-theme-color);
+  font-weight: bold;
+  position: relative;
+  top: -20px;
+}
+
+/* section button  */
+.section_button {
+  display: flex;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 90%;
+}
+
+.section_button .section_button_link {
+  color: var(--main-theme-color);
+  font-size: var(--button-font);
+  font-weight: bold;
+}
+
+.section_button_link:hover {
+  color: var(--sub-theme-color);
+}
+
+
+.section_icons {
+  position: relative;
+  padding-left: 4px;
+}
+
+
+/* ----------------------------
+footer start style from here  
+-------------------------------*/
+.footer_info {
+  width: 100%;
+  height: 210px;
+  background-color: var(--sub-theme-color);
+  color: var(--main-bg-color);
+  padding: 8px;
+  text-align: center;
+
+}
+
+.footer_info>p {
+  font-size: 12px;
+  ;
+}
+
+
+.footer_social>a {
+  text-decoration: none;
+  color: var(--main-bg-color);
+  padding: 8px;
+
+
+}
+
+.footer_icon {
+  background-color: var(--main-bg-color);
+  color: var(--sub-theme-color);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.footer_icon:hover {
+  background-color: var(--main-theme-color);
+  color: var(--main-bg-color);
+}
+
+
+
+
+
+
 
 /* 
-.collection_demo {
-   width: 320px;
-   height: 420px;
- background-color: var(--main-bg-color);
-} */
+=====================================
+----------------------------------
+style for mobile devices 
+@media screen and (max-width: 680px)
+----------------------------------- 
+====================================*/
+
+@media screen and (max-width: 680px) {
+
+  /*-------------------------------
+  ================================
+  navegation bar midia Quary css
+  ================================
+  ---------------------------------  */
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+
+  .site_name {
+    font-size: 12px;
+    color: var(--sub-theme-color);
+    text-transform: uppercase;
+  }
+
+  .menu_icon>i {
+    display: inline;
+    color: var(--main-theme-color);
+  }
+
+
+  .nav_bar {
+
+    display: none;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    padding: 1px; */
+  }
+
+
+  .nav_icons {
+    font-size: 8px;
+  }
+
+  /*---------------------------------
+  ===================================
+  home section mediaQuary Start 
+  ==================================
+  --------------------------------  */
+  #content-section {
+    padding-bottom: 40px;
+  }
+
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home_info {
+    width: 95%;
+    height: 100%;
+
+  }
+
+  .header_text {
+    color: var(--main-heading-color);
+    font-size: 25px;
+  }
+
+
+  .header_pragraph {
+    color: var(--sub-theme-color);
+    font-size: 12px;
+  }
+
+
+  .button {
+    width: 100px;
+    height: 24px;
+    background-color: var(--main-theme-color);
+    border-radius: var(--button-border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-button);
+  }
+
+  .header_button,
+  .button_icon {
+    color: var(--main-bg-color);
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .header_img {
+    background-image: url("logos/blob5.svg");
+    background-repeat: no-repeat;
+    background-size: 250px;
+  }
+
+  .home_img>img {
+    width: 250px;
+    padding-top: 20px;
+  }
+
+
+  /* ---------------------------------
+  ====================================
+  trusted company List
+  ====================================
+  ---------------------- ---------------*/
+  .company_list {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .companys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-top: 1px solid hsl(216, 6%, 85%);
+    border-bottom: 1px solid hsl(220, 4%, 85%);
+    /* border: 3px solid hsl(210, 29%, 24%); */
+    padding: 40px;
+  }
+
+  .companys>img {
+    width: 60px;
+    padding: 5px;
+  }
+
+  /*------------------------------------------
+  ============================================
+  Media --- Section 2/ collection Section css 
+  ============================================
+  ------------------------------------------ */
+  .section_heading {
+    text-align: center;
+    font-size: 20px;
+    color: var(--sub-theme-color);
+  }
+
+  .collections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: var(--popular-collection-bg-color); */
+  }
+
+  .collections_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .collections_info {
+    width: 80%;
+    height: 100%;
+
+  }
+
+  .collections_demo {
+    width: 250px;
+    height: 370px;
+    background-color: var(--main-bg-color);
+    padding: 8px;
+    border-radius: var(--border-radius-5);
+    box-shadow: 2px 2px 25px 15px var(--popular-collection-bg-color);
+
+  }
+
+  .demo_img {
+    width: 250px;
+    height: 230px;
+    padding-bottom: 5px;
+  }
+
+  .demo_details {
+    display: inline;
+
+  }
+
+  .demo_header {
+    display: flex;
+    flex-direction: column;
+    color: var(--sub-theme-color);
+    font-size: 16px;
+    font-weight: var(--price-width);
+    padding: none;
+  }
+
+  .demo_ad_info {
+    font-size: 10px;
+    color: var(--sub-theme-color);
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+  }
+
+  /*------------------------------------------
+  ============================================
+  media footer start from here 
+  ============================================
+  ------------------------------------------ */
+  .footer_heading {
+    font-size: 16px;
+  }
+
+  .footer_info>p {
+    font-size: 8px;
+    ;
+  }
+
+  .footer_info {
+    width: 100%;
+    height: 115px;
+    background-color: var(--sub-theme-color);
+    color: var(--main-bg-color);
+    padding: 2px;
+    text-align: center;
+
+  }
+
+  .footer_icon {
+    background-color: var(--main-bg-color);
+    color: var(--sub-theme-color);
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 50px;
+  }
+
+}

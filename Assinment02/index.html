@@ -11,6 +11,7 @@
   <!-- icons link -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+  <script src="https://kit.fontawesome.com/c35b91fcff.js" crossorigin="anonymous"></script>
 
 
   <title>Influencer</title>
@@ -20,8 +21,39 @@
   <!-------------------------
    Header start from Here 
  --------------------------->
-  <header class="mani-header container">
+  <header class="navigation container">
 
+    <a id="site-name" href="index.html">
+      <h1 class="site_name">Influencer products</h1>
+    </a>
+    </div>
+    <nav class="nav_bar">
+      <div class="menu_icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav_content">
+        <a href="" class="nav_link">Home</a>
+      </ul>
+      <ul class="nav_link">
+        <a href="" class="nav_link">Products</a>
+      </ul>
+      <ul class="nav_link">
+        <a href="" class="nav_link">SingUp</a>
+      </ul>
+      <ul class="nav_link">
+        <a href="" class="nav_link">Login</a>
+      </ul>
+      <ul class="nav_link">
+        <a href="" class="nav_link">
+          <i class="uil uil-search nav-icons "></i>
+        </a>
+      </ul>
+      <ul class="nav_link">
+        <a href="" class="nav_link">
+          <i class="uil uil-shopping-cart nav-icons"></i>
+        </a>
+      </ul>
+    </nav>
   </header>
 
   <!--------------------------------
@@ -29,49 +61,79 @@
  --------------------------------->
   <!-- section 01 - Home  -->
   <main class="container">
-    <section class="home_section content">
+    <section class="home_section content" id="content-section">
       <div class="home_info">
         <h1 class="header_text" id="heading">
           Start Your Journey as
           <br>
           <span class="header_color_text" id="colorful-heading">
-            Influencer.
+            Influencer....
           </span>
         </h1>
         <p class="header_pragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Consequatur id minima ut quo dolorum doloremque dolor harum amet cumque eum!
         </p>
-        <a href="#" class="header_button" id="universel-button">
-          Preebook Now
-          <span class="button_icon">
-            <i class="uim uim-angle-right-b"></i>
-          </span>
-        </a>
+        <div class="button">
+          <a href="#" class="header_button" id="universel-button">
+            Preebook Now
+            <span class="button_icon">&#8594;</span>
+          </a>
+        </div>
+
       </div>
+      <!-- Home img  -->
       <div class=" home_info home_img">
         <img src="images/main-camera.png" alt="home-img" class="header_img">
+      </div>
+
+    </section>
+
+    <!-- trustes company -->
+    <section class="company_list" id="content-section">
+      <div class="companys">
+        <img src="logos/Alibaba.svg" alt="">
+        <img src="logos/Amazon.svg" alt="">
+        <img src="logos/Daraz.pk Logo.svg" alt="">
+        <img src="logos/Ebay.svg" alt="">
+        <img src="logos/Rakuten.svg" alt="">
+        <img src="logos/Target.svg " alt="">
+        <img src="logos/Walmart.svg " alt="">
       </div>
     </section>
 
     <!---------------------------------
-   Section 2/ collection Section 
+   Section 3/ collection Section 
   ---------------------------------->
     <!-- clolection 1 -->
-    <section class="popular_collection container">
-      <h1 class="section_heading">Popular Collections</h1>
+    <section class="popular_collection container " id="content-section">
+      <h1 class="section_heading">Popular <span class="header_color_text">
+          Collections
+        </span>
+      </h1>
       <div class="collections">
         <div class="collections_grid">
+          <!-- clolection 1 -->
           <div class="collections_info">
             <div class="collections_demo">
               <img class="demo_img" src="images/tripod.png" alt="">
               <div class="demo_details">
-                <h1 class="demo_header">Flex Tripod</h1>
-                <h2 class="demo_price">$50.49</h2>
-                <p class="demo_rateing">
-                </p>
-                <p class="demo_info">
-                  Lorem ipsum dolor sit amet.
+                <h1 class="demo_header">Flex Tripod
+                  <span class="demo_price">$50.49</span>
+                  <div class="demo_info">
+                    <div class="demo_rateing">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <p class="tottal_star">4.0</p>
+                  </div>
+                </h1>
+                <p class="demo_ad_info">
+                  TalkWorks Flexible Phone Tripod for iPhone,
+                  Android, Camera...
                 </p>
               </div>
             </div>
@@ -80,14 +142,24 @@
           <!-- clolection 2 -->
           <div class="collections_info">
             <div class="collections_demo">
-              <img class="demo_img" src="images/tripod.png" alt="">
+              <img class="demo_img" src="images/mic.png" alt="">
               <div class="demo_details">
-                <h1 class="demo_header">Flex Tripod</h1>
-                <h2 class="demo_price">$50.49</h2>
-                <p class="demo_rateing">
-                </p>
-                <p class="demo_info">
-                  Lorem ipsum dolor sit amet.
+                <h1 class="demo_header">Microphone
+                  <span class="demo_price">$20.49</span>
+                  <div class="demo_info">
+                    <div class="demo_rateing">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <p class="tottal_star">4.0</p>
+                  </div>
+                </h1>
+                <p class="demo_ad_info">
+                  Blue Yeti USB Mic for Recording and
+                  Streaming on PC and Mac...
                 </p>
               </div>
             </div>
@@ -96,14 +168,24 @@
           <!-- clolection 3 -->
           <div class="collections_info">
             <div class="collections_demo">
-              <img class="demo_img" src="images/tripod.png" alt="">
+              <img class="demo_img" src="images/airpod.png" alt="">
               <div class="demo_details">
-                <h1 class="demo_header">Flex Tripod</h1>
-                <h2 class="demo_price">$50.49</h2>
-                <p class="demo_rateing">
-                </p>
-                <p class="demo_info">
-                  Lorem ipsum dolor sit amet.
+                <h1 class="demo_header">Earbuds
+                  <span class="demo_price">$499.99</span>
+                  <div class="demo_info">
+                    <div class="demo_rateing">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <p class="tottal_star">4.0</p>
+                  </div>
+                </h1>
+                <p class="demo_ad_info">
+                  SAMSUNG Galaxy Buds Pro, Bluetooth
+                  Earbuds, True...
                 </p>
               </div>
             </div>
@@ -111,14 +193,24 @@
           <!-- clolection 4 -->
           <div class="collections_info">
             <div class="collections_demo">
-              <img class="demo_img" src="images/tripod.png" alt="">
+              <img class="demo_img" src="images/drone.png" alt="">
               <div class="demo_details">
-                <h1 class="demo_header">Flex Tripod</h1>
-                <h2 class="demo_price">$50.49</h2>
-                <p class="demo_rateing">
-                </p>
-                <p class="demo_info">
-                  Lorem ipsum dolor sit amet.
+                <h1 class="demo_header">DJI Air 2S - Drone
+                  <span class="demo_price">$1290.00</span>
+                  <div class="demo_info">
+                    <div class="demo_rateing">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <p class="tottal_star">4.0</p>
+                  </div>
+                </h1>
+                <p class="demo_ad_info">
+                  DJI Air 2S - Drone Quadcopter UAV with
+                  3-Axis Gimbal Camera, 5.4K Video...
                 </p>
               </div>
             </div>
@@ -126,14 +218,24 @@
           <!-- clolection 5 -->
           <div class="collections_info">
             <div class="collections_demo">
-              <img class="demo_img" src="images/tripod.png" alt="">
+              <img class="demo_img" src="images/setup.png" alt="">
               <div class="demo_details">
-                <h1 class="demo_header">Flex Tripod</h1>
-                <h2 class="demo_price">$50.49</h2>
-                <p class="demo_rateing">
-                </p>
-                <p class="demo_info">
-                  Lorem ipsum dolor sit amet.
+                <h1 class="demo_header">Light Setup
+                  <span class="demo_price">$300.99</span>
+                  <div class="demo_info">
+                    <div class="demo_rateing">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <p class="tottal_star">4.0</p>
+                  </div>
+                </h1>
+                <p class="demo_ad_info">
+                  Arkon Remarkable Creators Phone and Tablet
+                  Stand with Ring Light...
                 </p>
               </div>
             </div>
@@ -141,14 +243,24 @@
           <!-- clolection 6 -->
           <div class="collections_info">
             <div class="collections_demo">
-              <img class="demo_img" src="images/tripod.png" alt="">
+              <img class="demo_img" src="images/lights.png" alt="">
               <div class="demo_details">
-                <h1 class="demo_header">Flex Tripod</h1>
-                <h2 class="demo_price">$50.49</h2>
-                <p class="demo_rateing">
-                </p>
-                <p class="demo_info">
-                  Lorem ipsum dolor sit amet.
+                <h1 class="demo_header">Photoshoot set
+                  <span class="demo_price">$850.50</span>
+                  <div class="demo_info">
+                    <div class="demo_rateing">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <p class="tottal_star">4.0</p>
+                  </div>
+                </h1>
+                <p class="demo_ad_info">
+                  [Upgraded LED Bulb]MsMk Photography
+                  Lighting Kit 8.5x10ft...
                 </p>
               </div>
             </div>
@@ -156,14 +268,24 @@
           <!-- clolection 7 -->
           <div class="collections_info">
             <div class="collections_demo">
-              <img class="demo_img" src="images/tripod.png" alt="">
+              <img class="demo_img" src="images/camera.png" alt="">
               <div class="demo_details">
-                <h1 class="demo_header">Flex Tripod</h1>
-                <h2 class="demo_price">$50.49</h2>
-                <p class="demo_rateing">
-                </p>
-                <p class="demo_info">
-                  Lorem ipsum dolor sit amet.
+                <h1 class="demo_header">Vlogging Camera
+                  <span class="demo_price">$850.40</span>
+                  <div class="demo_info">
+                    <div class="demo_rateing">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <p class="tottal_star">4.0</p>
+                  </div>
+                </h1>
+                <p class="demo_ad_info">
+                  Kodak PIXPRO Astro Zoom AZ401
+                  Camera with 40X...
                 </p>
               </div>
             </div>
@@ -171,14 +293,24 @@
           <!-- clolection 8 -->
           <div class="collections_info">
             <div class="collections_demo">
-              <img class="demo_img" src="images/tripod.png" alt="">
+              <img class="demo_img" src="images/single-light.png" alt="">
               <div class="demo_details">
-                <h1 class="demo_header">Flex Tripod</h1>
-                <h2 class="demo_price">$50.49</h2>
-                <p class="demo_rateing">
-                </p>
-                <p class="demo_info">
-                  Lorem ipsum dolor sit amet.
+                <h1 class="demo_header">Green Screen
+                  <span class="demo_price">$25.00</span>
+                  <div class="demo_info">
+                    <div class="demo_rateing">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <p class="tottal_star">4.0</p>
+                  </div>
+                </h1>
+                <p class="demo_ad_info">
+                  Elgato Green Screen - Collapsible Chroma
+                  Key Backdrop...
                 </p>
               </div>
             </div>
@@ -186,28 +318,75 @@
           <!-- clolection 9 -->
           <div class="collections_info">
             <div class="collections_demo">
-              <img class="demo_img" src="images/tripod.png" alt="">
+              <img class="demo_img" src="images/action.png" alt="">
               <div class="demo_details">
-                <h1 class="demo_header">Flex Tripod</h1>
-                <h2 class="demo_price">$50.49</h2>
-                <p class="demo_rateing">
-                </p>
-                <p class="demo_info">
-                  Lorem ipsum dolor sit amet.
+                <h1 class="demo_header">Action Camera
+                  <span class="demo_price">$720.49</span>
+                  <div class="demo_info">
+                    <div class="demo_rateing">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star unfilled"></i>
+                    </div>
+                    <p class="tottal_star">4.0</p>
+                  </div>
+                </h1>
+                <p class="demo_ad_info">
+                  GoPro HERO10 Black - Waterproof Action
+                  Camera with...
                 </p>
               </div>
             </div>
           </div>
 
         </div>
+        <!-- section button  -->
+        <div class="section_button">
+          <a class="section_button_link" href="www.amzon.com">
+            see more <span class="section_button_icon">
+              <i class="fas fa-arrow-right section_icons "></i>
+            </span>
+          </a>
+        </div>
       </div>
       </div>
-
-
-
     </section>
+
   </main>
-  <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js" />
+
+  <!---------------------------
+    footer start from here 
+  ----------------------------->
+  <footer>
+    <div class="footer_info">
+      <h1 class="footer_heading">
+        Influencer products
+      </h1>
+      <p class="footer_dis">
+        Copyright © 2020 influencer products <br>
+        All rights reserved
+      </p>
+      <div class="footer_social">
+        <a href="www.youtube.com" class=" nav_link social_link">
+          <i class="fab fa-youtube footer_icon"></i>
+        </a>
+        <a href="www.facebook.com/ttbrifat" class="nav_link social_link">
+          <i class="fab fa-facebook footer_icon"></i>
+        </a>
+        <a href="" class="nav_link social_link">
+          <i class="fab fa-linkedin footer_icon"></i>
+        </a>
+        <a href="" class="nav_link social_link">
+          <i class="fab fa-twitter-square footer_icon"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/fc16266185.js" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
