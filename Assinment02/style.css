@@ -378,6 +378,80 @@ footer start style from here
 }
 
 
+/*---------------------
+Trending Influencers
+-----------------------*/
+.influencer_lists {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 20px;
+  padding: 50px;
+  padding-left: 10%;
+}
+
+.influncers {
+  padding-top: 50px;
+}
+
+.influencer_details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 20px;
+  width: 90%;
+  height: 230px;
+  /* background-color: var(--main-bg-shadow-color); */
+  background-color: var(--main-bg-color);
+  padding: 8px;
+  padding-bottom: 40px;
+  border-radius: var(--border-radius-5);
+  box-shadow: 2px 2px 25px 15px var(--popular-collection-bg-color);
+}
+
+.influncer_img {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+
+}
+
+.right_side_img {
+  position: relative;
+  padding-left: 145px;
+}
+
+.influencer {
+  border-radius: 5px;
+}
+
+
+.influencer_name {
+  font-size: var(--price-font);
+  color: var(--sub-theme-color);
+}
+
+.influencer_job,
+.influencer_sealery {
+  font-size: var(--rateing-font);
+  color: var(--sub-theme-color);
+}
+
+.influencer_more {
+  font-size: var(--rateing-pragraph-font);
+  color: var(--sub-theme-color);
+}
+
+.section_button_link {
+  color: var(--main-theme-color);
+}
+
+.readmore_button:hover {
+  color: var(--main-bg-color);
+}
+
+.section_button_link:hover {
+  color: var(--sub-theme-color);
+}
+
 
 
 
@@ -391,7 +465,13 @@ style for mobile devices
 ----------------------------------- 
 ====================================*/
 
-@media screen and (max-width: 680px) {
+
+
+
+
+
+
+@media screen and (max-width: 425px) {
 
   /*-------------------------------
   ================================
@@ -399,8 +479,6 @@ style for mobile devices
   ================================
   ---------------------------------  */
   .navigation {
-    display: flex;
-    flex-direction: column;
     padding-bottom: 5px;
   }
 
@@ -408,23 +486,13 @@ style for mobile devices
     font-size: 12px;
     color: var(--sub-theme-color);
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  .menu_icon>i {
-    display: inline;
-    color: var(--main-theme-color);
-  }
-
 
   .nav_bar {
-
     display: none;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 8px;
-    padding: 1px; */
   }
 
 
@@ -441,15 +509,17 @@ style for mobile devices
     padding-bottom: 40px;
   }
 
-
   .content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .home_info {
     width: 95%;
     height: 100%;
+
 
   }
 
@@ -457,6 +527,7 @@ style for mobile devices
     color: var(--main-heading-color);
     font-size: 25px;
   }
+
 
 
   .header_pragraph {
@@ -475,6 +546,7 @@ style for mobile devices
     align-items: center;
     padding: var(--padding-button);
   }
+
 
   .header_button,
   .button_icon {
@@ -508,7 +580,7 @@ style for mobile devices
 
   .companys {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     border-top: 1px solid hsl(216, 6%, 85%);
     border-bottom: 1px solid hsl(220, 4%, 85%);
@@ -620,4 +692,43 @@ style for mobile devices
     border-radius: 50px;
   }
 
+  /*---------------------
+Trending Influencers
+-----------------------*/
+
+  .influencer {
+    width: 215px;
+    height: 150px;
+  }
+
+  .influencer_details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    height: 100%;
+  }
+
+  .influencer_name {
+    font-size: 15px;
+  }
+
+  .influencer_job,
+  .influencer_sealery {
+    font-size: 10px;
+  }
+
+  .influencer_more {
+    font-size: 10px;
+  }
+
+  .right_side_img {
+    position: relative;
+    padding-left: 0px;
+  }
+
+  .down_side_button {
+    position: relative;
+    top: 185px;
+
+  }
 }
